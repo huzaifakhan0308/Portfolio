@@ -1,0 +1,69 @@
+.layout{
+  max-width: 160vh;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-size: var(--fontSizeSmall);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+.layout2{
+  max-width: 160vh;
+  width: 100vw;
+  height: 140vh;
+  position: relative;
+  font-size: var(--fontSizeSmall);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.desktop{
+  width: 100%;
+  height: 100%;
+}
+.mobile{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .desktop{
+      display: none !important;
+    }
+    .layout{
+      height: max-content !important ;
+      font-size: var(--fontSizeSmallMob) !important ;
+      max-height: none !important ;
+      max-width: none !important ;
+      overflow: visible !important ;
+    }
+    .layout2{
+      font-size: var(--fontSizeSmallMob) !important ;
+      height: 100vh !important ;
+      max-width: none !important ;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .mobile{
+      display: none !important;
+    }
+}
+
+.menuLayout{
+  max-width: 160vh;
+  pointer-events: none;
+  max-height: 100vw;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  font-size: var(--fontSizeSmall);
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
