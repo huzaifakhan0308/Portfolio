@@ -11,6 +11,9 @@ import bootstrap from '../public/icons/bootstrap.svg'
 import material from '../public/icons/material.svg'
 import github from '../public/icons/github.svg'
 import express from '../public/icons/express.svg'
+import linkedIn from '../public/icons/linkedin.png'
+import twitter from '../public/icons/twitter (1).png'
+import gmail from '../public/icons/new.png'
 
 const expertise = [
             {
@@ -72,5 +75,7 @@ const expertise = [
     ]
 
 const comfortable = [ tailwind , bootstrap , material , github , express ]
+
+const letsConnect = [ linkedIn, twitter, gmail , github ]
     
-export const expertiseHook = {expertise , comfortable}
+export const expertiseHook = { expertise, comfortable, letsConnect }
