@@ -2,7 +2,7 @@ import React from 'react'
 import style from '../styles/component_scss/Component.module.scss'
 import Button from '../elements/button'
 import certify from '../public/icons/certify.svg'
-import photo from "../public/photo.jpg"
+// import photo from "../public/photo.jpg"
 import plant from '../public/plant.png'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
@@ -14,7 +14,7 @@ const Tablet = () =>{
             <div className={style.top}><p>FRONTEND <br />REACT <br />DEVELOPER </p></div>
             <div className={style.photoContainer}>
                 <div className={style.p} >-SHAYAN</div>
-                <div className={style.photo} style={{backgroundImage:`url(${photo.src})`}} ></div>
+                {/* <div className={style.photo} style={{backgroundImage:`url(${photo.src})`}} ></div> */}
             </div>
         </div>
     )
