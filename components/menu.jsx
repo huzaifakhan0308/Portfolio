@@ -101,7 +101,6 @@ function Menu({noButton=false}) {
         <div className={style.menuHireButton} style={{opacity: noButton? 0 : 1 }} >
           <Button icon={plane} fun={goToContact} >Hire me now</Button>
         </div>
-        <MenuButtonMobile />
       </div>
     </Mobile>
     </>
