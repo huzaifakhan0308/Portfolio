@@ -5,7 +5,7 @@ import style from '../styles/pageCss/page.module.css'
 import styleHome from '../styles/Home.module.css'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
-import Menu from '../components/menu'
+import Menu from './menu'
 import Button from '../elements/button'
 
 function Contact() {
@@ -23,17 +23,15 @@ function Contact() {
     setButton("SENDING");
 
     emailjs.send(
-        "shayan_12902",
-        "job_shayan",
+        "service_4h5p21d",
+        "job_huzaifa",
         {
           name: name,
           email: email,
           country: country,
-          website: website,
           message: message,
-          subject: subject,
         },
-        "user_JJWJdHtLayDNb7KXtDkMZ"
+        "b2eu1H-RBmufuTf_6"
       )
       .then(
         (result) => {
@@ -61,14 +59,8 @@ function Contact() {
 
   return (
     <div className={styleHome.layout}>
-      <Head>
-          <title>Contact</title>
-      </Head>
       <Desktop>
         <div className={style.contact}>
-          <div className={styleHome.menuLayout} >
-            <Menu noButton />
-          </div>
           <div className={style.background}>
             <div className={`${style.circle1} ${style.circle} `}></div>
             <div className={`${style.circle2} ${style.circle} `}></div>
@@ -83,20 +75,12 @@ function Contact() {
                 <input required value={name} onChange={(e)=>{setName(e.target.value)}} type="text" />
               </div>
               <div className={style.input}>
-                <a className={style.name}>Subject</a>
-                <input required value={subject} onChange={(e)=>{setSubject(e.target.value)}} type="text" />
-              </div>
-              <div className={style.input}>
                 <a className={style.name}>Email</a>
                 <input required value={email} onChange={(e)=>{setEmail(e.target.value)}} type="email" />
               </div>
               <div className={style.input}>
                 <a className={style.name}>Country</a>
                 <input required value={country} onChange={(e)=>{setCountry(e.target.value)}} type="text" />
-              </div>
-              <div className={style.input}>
-                <a className={style.name}>Company Website</a>
-                <input required value={website} onChange={(e)=>{setWebsite(e.target.value)}} type="url" />
               </div>
               <div className={style.input}>
                 <a className={style.name}>Message</a>
@@ -114,26 +98,17 @@ function Contact() {
       </Desktop>
       <Mobile>
         <div className={style.contactMob}>
-          <div className={styleHome.menuLayout} >
-            <Menu noButton />
-          </div>
           <div className={style.contactForm}>
-            <header>CONTACT FORM </header>
+            <header>CONTACT FORM <br/> <a>I WILL BE GLAD TO HEAR FROM YOU</a> </header>
             <form onSubmit={submit} >
               <div className={style.input}>
                 <input placeholder='Name' required value={name} onChange={(e)=>{setName(e.target.value)}} type="text" />
-              </div>
-              <div className={style.input}>
-                <input placeholder='Subject' required value={subject} onChange={(e)=>{setSubject(e.target.value)}} type="text" />
               </div>
               <div className={style.input}>
                 <input placeholder='Email' required value={email} onChange={(e)=>{setEmail(e.target.value)}} type="email" />
               </div>
               <div className={style.input}>
                 <input placeholder='Country' required value={country} onChange={(e)=>{setCountry(e.target.value)}} type="text" />
-              </div>
-              <div className={style.input}>
-                <input placeholder='Company Website' required value={website} onChange={(e)=>{setWebsite(e.target.value)}} type="url" />
               </div>
               <div className={style.input}>
                 <input placeholder='Message' required value={message} onChange={(e)=>{setMessage(e.target.value)}} className={style.area} type="text" />
@@ -146,7 +121,6 @@ function Contact() {
               </label>
             </form>
           </div>
-          <a>I WILL BE GLAD TO HEAR FROM YOU</a>
         </div>
       </Mobile>
     </div>

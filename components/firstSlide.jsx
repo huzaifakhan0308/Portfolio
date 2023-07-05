@@ -34,7 +34,7 @@ function FirstSlide() {
             <span className={style.lightFont} >A FULL STACK SOFTWARE DEVELOPER <br />YES ! THE <b>COOL</b> GUY ON THE LEFT IS ME <br />
             </span>
             <div className={style.mouse}></div>
-            <span className={style.lightFont} >I CAN HELP YOU BUILD A PRODUCT, FEATURE OR WEBSITE LOOK THROUGH SOME OF MY WORK AND EXPERIENCE!
+            <span className={style.lightFontFirstSlide} >I CAN HELP YOU BUILD A PRODUCT, FEATURE OR WEBSITE LOOK THROUGH SOME OF MY WORK AND EXPERIENCE!
              IF YOU LIKE WHAT YOU SEE AND HAVE A PROJECT YOU NEED CODED, DON’T HESTIATE TO CONTACT ME.
             </span>
             <br />
@@ -66,6 +66,9 @@ function FirstSlide() {
             </span>
             <span className={style.details} >A FULL STACK SOFTWARE DEVELOPER <br />YES ! THE <b>COOL</b> GUY ON THE TOP IS ME <br /> </span>
             <div className={style.mouse}></div>
+            <span className={style.detailsA} >I CAN HELP YOU BUILD A PRODUCT, FEATURE OR WEBSITE LOOK THROUGH SOME OF MY WORK AND EXPERIENCE!
+              IF YOU LIKE WHAT YOU SEE AND HAVE A PROJECT YOU NEED CODED, DON’T HESTIATE TO CONTACT ME.
+            </span>
             <div className={`${style.largeFont} ${style.experience}`}>
               <span>LET’S CONNECT</span>
               <div className={style.comfortableIcons} style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} >

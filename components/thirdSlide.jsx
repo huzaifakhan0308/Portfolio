@@ -5,10 +5,10 @@ import IconButton from '../elements/iconButton'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
 
-const ExpertiseCard = ({icon , name , perc , details }) =>{
+const ExpertiseCard = ({icon , name , details }) =>{
 
     return (
-        <div className={style.expertiseCard}>        
+        <div className={style.expertiseCard}>
             <div className={style.expertiseCircle}>
                 <img alt='' className={style.icon} src={icon.src} />
             </div>
@@ -16,14 +16,7 @@ const ExpertiseCard = ({icon , name , perc , details }) =>{
                 <div className={style.expertiseName}>
                     {name}
                 </div>
-                <div className={style.percentageBox}>
-                    <div className={style.percentageCircle}>
-                        <div className={style.percentageCircleInside} style={{bottom: `${perc}%`}} >
-                        </div>
-                    </div>
-                    <p className={style.p} >My Expertise  <br />{perc}%</p> 
-                </div>
-                <div className={`${style.details} ${style.lightFont} `}>
+                <div className={`${style.details} ${style.lightFont} `} >
                     {details}
                 </div>
             </div>
@@ -146,7 +139,7 @@ function ThirdSlide() {
                 <div className={style.carouslaContainer} >
                     <div ref={carousal} className={style.carousal}>
                         {expertise.map((obj , index)=>(
-                            < ExpertiseCard key={index} index={index} icon={obj.icon} name={obj.name} perc={obj.perc} details={obj.details} />
+                            < ExpertiseCard key={index} index={index} icon={obj.icon} name={obj.name} details={obj.details} />
                             ))}
                     </div>
                     <div className={style.overlay}>

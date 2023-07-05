@@ -139,6 +139,10 @@
             font-size: 3vw;
             opacity: 0.7;
         }
+        .detailsA{
+            font-size: 2vw;
+            opacity: 0.7;
+        }
         .mouse{
             width: 2vh;
             aspect-ratio: 1/2;
@@ -459,7 +463,7 @@
                 width: 100%;
                 height: 100%;
                 top: 0;
-                filter: blur(0px);
+                filter: brightness(1);
                 transition: 0.3s ease-in-out;
             }
             .workDetails{
@@ -492,7 +496,7 @@
         }
 
         .work:hover .backImage{
-            filter: blur(10px);
+            filter: brightness(0.6) blur(10px);
         }
         .work:hover .heading{
             transform: translateY(0px);
@@ -1163,8 +1167,12 @@
 .lightFont{
     opacity: 0.4;
     letter-spacing: 1px;
+    font-size: large;
 }
-
+.lightFontFirstSlide{
+    opacity: 0.4;
+    letter-spacing: 1px;
+}
 .largeFont{
     font-size: var(--fontSizeLarge);
 }

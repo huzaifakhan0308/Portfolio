@@ -1,14 +1,14 @@
-import wallmania from "../public/wallmania.jpg"
+import bookease from "../public/bookease.png"
 import recipes from "../public/recipes.jpg"
 import editor from "../public/editor.jpg"
 
 export const workHook = () =>{
     const work = [
         {
-            heading:"WALLMANIA",
-            link:"/wallmania",
-            details:"A Wallpaper Website using Pexels API. You can search with different cetagories and layouts.",
-            image: wallmania
+            heading:"BOOKEASE",
+            link:"/",
+            details:"Streamline hotel reservations with our React-based front-end and Ruby on Rails-powered backend, delivering a seamless booking experience.",
+            image: bookease
         },
         {
             heading:"SPOONACULAR",

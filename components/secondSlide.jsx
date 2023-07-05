@@ -29,7 +29,6 @@ const Work = ({link , image , heading , details }) =>{
             <Button fun={visitSite} dark className={style.headingWork} >VISIT SITE</Button>
           </div>
         </div>
-        
       </div>
   )
 }
@@ -77,7 +76,6 @@ function SecondSlide({expertise , aboutMe}) {
           <div className={style.slidesOverlay}>
             <button onClick={scrollLeft} className={`${style.slideButton} ${style.slideButtonLeft} `} > <div className={style.arrow}></div> </button>
             <button onClick={scrollRight} className={`${style.slideButton} ${style.slideButtonRight}`} ><div className={style.arrow}></div></button>
-
           </div>
           <div className={style.buttons} >
               <Button fun={aboutMeIntoView} icon={profile} >ABOUT ME</Button>
