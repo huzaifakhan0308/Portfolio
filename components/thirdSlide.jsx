@@ -1,55 +1,63 @@
-import React , { useRef, useState} from 'react'
+import React from 'react'
 import style from '../styles/component_scss/Component.module.scss'
 import { expertiseHook } from '../hooks/expertiseHook'
 import IconButton from '../elements/iconButton'
-import Desktop from '../elements/Desktop'
-import Mobile from '../elements/Mobile'
+import '../styles/Elements.module.css'
 
 function ThirdSlide() {
 
-    const [ expertise ] = useState(expertiseHook.expertise)
+    const frontEndExpertise = expertiseHook.frontEndExpertise
+    const backEndExpertise = expertiseHook.backEndExpertise
     const comfortable = expertiseHook.comfortable
 
     return (
-        <>
-        <Desktop>
-            <div className={style.thirdSlide} >
-            <h1>MY TECH STACK</h1>
-                <div className={style.comfortableIcons}>
-                <p> FRONT END </p>
-                {/* <div className=""> */}
-                    {expertise.map((obj , index)=>(
-                        <IconButton key={index} index={index} icon={obj.icon} />
-                        ))}
-                {/* </div> */}
-                </div>
-                <p> SOFT SKILLS </p>
-                <div className={style.comfortableIcons}>
-                    {comfortable.map((icon,index)=>(
-                        <IconButton key={index} icon={icon} />
-                    ))}
-                </div>
+        <div className={style.thirdSlide} >
+            <div className={style.header} >
+                MY TECH STACK
             </div>
-        </Desktop>
-        <Mobile>
-            <div className={style.thirdSlideMob} >
-                <p> MY EXPERTISE </p>
-                <div className={style.comfortableIcons}>
-                    {expertise.map((obj , index)=>(
-                        <IconButton key={index} index={index} icon={obj.icon} />
-                        ))}
-                </div>
-                <p> I AM FAMILIAR WITH </p>
-                <div className={style.comfortableIcons}>
-                    {comfortable.map((icon , index)=>(
-                        <IconButton key={index} icon={icon} />
-                    ))}
-                </div>
-                
+            <p> FRONT END </p>
+            <div className={style.comfortableIcons}>
+                {frontEndExpertise.map((obj, index)=>(
+                    <div
+                        className={style.iconsContainer}
+                        key={index}
+                    >
+                        <h2>
+                            {obj.name}
+                        </h2>
+                        <IconButton icon={obj.icon} />
+                    </div>
+                ))}
             </div>
-
-        </Mobile>
-        </>
+            <p> BACK END </p>
+            <div className={style.comfortableIcons}>
+                {backEndExpertise.map((obj , index)=>(
+                    <div
+                        className={style.iconsContainer}
+                        key={index}
+                    >
+                        <h2>
+                            {obj.name}
+                        </h2>
+                        <IconButton icon={obj.icon} />
+                    </div>
+                ))}
+            </div>
+            <p> SOFT SKILLS </p>
+            <div className={style.comfortableIcons}>
+                {comfortable.map((obj, index)=>(
+                    <div
+                        className={style.iconsContainer}
+                        key={index}
+                    >
+                        <h2>
+                            {obj.name}
+                        </h2>
+                        <IconButton icon={obj.icon} />
+                    </div>
+                ))}
+            </div>
+        </div>
     )
 }
 

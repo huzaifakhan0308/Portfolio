@@ -709,49 +709,39 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    .header {
+        font-size: var(--fontSizeLarge);
+        margin: 40px 0;
+        letter-spacing: 3px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.407);
+    }
     p{
         font-size: var(--fontSizeLarge);
         margin: 30px;
     }
-    .icons{
-        display: flex;
-    }
     .comfortableIcons{
         display: flex;
-        width: 60%;
-        box-shadow: var(--boxShadowInside);
-        padding: 10px;
-        padding-left: 10%;
-        margin: 20px;
-        margin-top: 10px;
-        border-radius: var(--borderRadius);
-    }
-}
-.thirdSlideMob{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    p{
-        font-size: var(--fontSizeLargeMob);
-        margin: 30px;
-    }
-    .icons{
-        display: grid;
-        grid-template-columns: repeat(5 , 50px);
-    }
-    .comfortableIcons{
-        display: flex;
-        width: 80%;
         justify-content: center;
+        align-items: center;
+        width: 80%;
         box-shadow: var(--boxShadowInside);
         padding: 10px;
-        margin: 20px;
-        margin-top: 10px;
-        column-gap: 2%;
         border-radius: var(--borderRadius);
+    }
+    .iconsContainer{
+        position: relative;
+    }
+
+    .iconsContainer h2 {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 1s ease;
+        position: absolute;
+        bottom: 10vh;
+    }
+    .iconsContainer:hover h2 {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
