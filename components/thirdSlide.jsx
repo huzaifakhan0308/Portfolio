@@ -15,7 +15,7 @@ function ThirdSlide() {
             <div className={style.header} >
                 MY TECH STACK
             </div>
-            <p> FRONT END </p>
+            <p> Front-End </p>
             <div className={style.comfortableIcons}>
                 {frontEndExpertise.map((obj, index)=>(
                     <div
@@ -29,7 +29,7 @@ function ThirdSlide() {
                     </div>
                 ))}
             </div>
-            <p> BACK END </p>
+            <p> Back-End </p>
             <div className={style.comfortableIcons}>
                 {backEndExpertise.map((obj , index)=>(
                     <div
@@ -43,7 +43,7 @@ function ThirdSlide() {
                     </div>
                 ))}
             </div>
-            <p> SOFT SKILLS </p>
+            <p> Soft-Skills </p>
             <div className={style.comfortableIcons}>
                 {comfortable.map((obj, index)=>(
                     <div

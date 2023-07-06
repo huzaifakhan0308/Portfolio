@@ -707,9 +707,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     .header {
+        text-align: center;
         font-size: var(--fontSizeLarge);
         margin: 40px 0;
         letter-spacing: 3px;
@@ -721,6 +723,7 @@
     }
     .comfortableIcons{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 80%;

@@ -9,19 +9,35 @@ import profile from '../public/icons/profile.svg'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
 
-const MenuButton = () =>{
+const MenuButton = ({ top, projects, aboutMe, expertise, contact}) =>{
   const [ hover , setHover ] = useState(false)
   const [ active , setActive ] = useState(false)
   const router = useRouter()
 
-  function goToResume(){
-    router.push("/resume")
+  function goToTop(){
+    top.current.scrollIntoView({
+      behavior: "smooth"
+    })
   }
-  function goToProfile(){
-    router.push("/")
+  function goToProjects(){
+    projects.current.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+  function goToAbout(){
+    aboutMe.current.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+  function goToExpertise(){
+    expertise.current.scrollIntoView({
+      behavior: "smooth"
+    })
   }
   function goToContact(){
-    router.push("/contact")
+    contact.current.scrollIntoView({
+      behavior: "smooth"
+    })
   }
   return (
     <div>
@@ -32,10 +48,16 @@ const MenuButton = () =>{
         </div>
         <input type="checkbox" checked={active} className={style.checkBox} />
         <div className={`${style.buttonSecondary} ${style.buttonSecondary1} `} >
-          <Button icon={resume} light fun={goToResume} >Resume</Button>
+          <Button icon={resume} light fun={goToTop} >Hero</Button>
+        </div>
+        <div className={`${style.buttonSecondary} ${style.buttonSecondary1} `} >
+        <Button icon={resume} light fun={goToProjects} >Projects</Button>
+        </div>
+        <div className={`${style.buttonSecondary} ${style.buttonSecondary1} `} >
+        <Button icon={resume} light fun={goToAbout} >About Me</Button>
         </div>
         <div className={`${style.buttonSecondary} ${ style.buttonSecondary2 } `} >
-          <Button icon={profile} light fun={goToProfile} >Profile</Button>
+        <Button icon={profile} light fun={goToExpertise} >Expertise</Button>
         </div>
         <div className={`${style.buttonSecondary} ${ style.buttonSecondary3 } `} >
           <Button icon={contact} light fun={goToContact} >Contact</Button>
@@ -78,7 +100,7 @@ const MenuButtonMobile = () =>{
   )
 }
 
-function Menu({noButton=false}) {
+function Menu({ top, projects, aboutMe, expertise , contact , noButton=false}) {
 
   const router = useRouter()
 
@@ -93,7 +115,7 @@ function Menu({noButton=false}) {
         <div className={style.menuHireButton} style={{opacity: noButton? 0 : 1 }} >
           <Button fun={goToContact} icon={plane} >Hire me now</Button>
         </div>
-        <MenuButton />
+          <MenuButton top={top} projects={projects} aboutMe={aboutMe} expertise={expertise} contact={contact} />
       </div>
     </Desktop>
     <Mobile>
@@ -101,6 +123,7 @@ function Menu({noButton=false}) {
         <div className={style.menuHireButton} style={{opacity: noButton? 0 : 1 }} >
           <Button icon={plane} fun={goToContact} >Hire me now</Button>
         </div>
+        {/* <MenuButtonMobile /> */}
       </div>
     </Mobile>
     </>

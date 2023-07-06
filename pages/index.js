@@ -11,6 +11,7 @@ const Contact = lazy(()=>import('../components/contact'))
 
 export default function Home() {
   const top = useRef(null)
+  const projects = useRef(null)
   const aboutMe = useRef(null)
   const expertise = useRef(null)
   const contact = useRef(null)
@@ -20,12 +21,12 @@ export default function Home() {
           <title>Profile</title>
       </Head>
       <div className={styles.menuLayout} >
-          <Menu />
+        <Menu top={top} projects={projects} aboutMe={aboutMe} expertise={expertise} contact={contact}/>
       </div>
       <div ref={top} className={styles.layout} >
           <FirstSlide />
       </div>
-      <div className={styles.layout} >
+      <div ref={projects} className={styles.layout} >
         <Suspense fallback={<>Loading</>} >  
           <SecondSlide aboutMe={aboutMe} expertise={expertise} />
         </Suspense>

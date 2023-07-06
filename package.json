@@ -16,7 +16,7 @@
     "axios": "^0.27.2",
     "downloadjs": "^1.4.7",
     "emailjs": "^4.0.1",
-    "framer-motion": "^7.2.1",
+    "framer-motion": "^7.10.3",
     "html-to-image": "^1.10.6",
     "next": "12.2.5",
     "react": "18.2.0",

@@ -1,4 +1,4 @@
-import React ,{useState , useEffect} from 'react'
+import React ,{useState , useEffect, useRef} from 'react'
 import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import style from '../styles/pageCss/page.module.css'
@@ -7,6 +7,7 @@ import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
 import Menu from './menu'
 import Button from '../elements/button'
+import { useInView } from "framer-motion"
 
 function Contact() {
   const [name, setName] = useState("");
@@ -16,6 +17,8 @@ function Contact() {
   const [website, setWebsite] = useState("");
   const [message, setMessage] = useState("");
   const [button , setButton ] = useState("HIRE ME")
+  const contact = useRef(null)
+  const isInView = useInView(contact)
 
   function submit(e) {
     e.preventDefault();
@@ -56,12 +59,11 @@ function Contact() {
     setMessage("");
   }
 
-
   return (
-    <div className={styleHome.layout}>
+    <div ref={contact} className={styleHome.layout}>
       <Desktop>
         <div className={style.contact}>
-          <div className={style.background}>
+          <div style={{ animation: !isInView? "background 5s ease-in-out":"" }} className={style.background}>
             <div className={`${style.circle1} ${style.circle} `}></div>
             <div className={`${style.circle2} ${style.circle} `}></div>
             <div className={`${style.circle3} ${style.circle} `}></div>
