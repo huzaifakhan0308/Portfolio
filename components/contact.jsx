@@ -63,12 +63,7 @@ function Contact() {
     <div ref={contact} className={styleHome.layout}>
       <Desktop>
         <div className={style.contact}>
-          <div style={{ animation: !isInView? "background 5s ease-in-out":"" }} className={style.background}>
-            <div className={`${style.circle1} ${style.circle} `}></div>
-            <div className={`${style.circle2} ${style.circle} `}></div>
-            <div className={`${style.circle3} ${style.circle} `}></div>
-            <div className={`${style.circle4} ${style.circle} `}></div>
-          </div>
+          
           <div className={style.contactForm}>
             <header>CONTACT FORM<a>I WILL BE GLAD TO HEAR FROM YOU</a> </header>
             <form onSubmit={submit} >
