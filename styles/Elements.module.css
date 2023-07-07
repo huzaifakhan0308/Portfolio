@@ -26,6 +26,13 @@
     transform: rotateX(0deg) translateY(0px) ;
 }
 
+@media only screen and (max-width: 400px) {
+    .buttonMain{
+        font-size: 1.5vh;
+        padding: 0.6vh;
+    }
+}
+
 .buttonHover{
     transform: rotateX(-90deg) translateY(-60px) ;
     text-transform: uppercase;

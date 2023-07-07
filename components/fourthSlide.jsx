@@ -6,7 +6,6 @@ import photo from "../public/huzaifa1.jpg"
 import plant from '../public/plant.png'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
-import { useRouter } from 'next/router'
 
 const Tablet = () =>{
     return (
@@ -21,16 +20,16 @@ const Tablet = () =>{
 }
 
 const DetailsContainer = () =>{
-    const router = useRouter()
-    function goToResume(){
-        router.push("/resume")
-      }
     return (
         <div className={style.detailsContainer}>
             <div className={style.details} ><a className={style.detailsA} >I AM</a> <p className={style.detailsP} >I am from Pakistan . Providing services of the market current most demanding technologies </p> </div>
             <div className={style.details} ><p className={style.detailsP} >I am looking for remote work and would love to put my efforts in contributing in a company. I am comfortable in working in almost all work schedules .</p><a className={style.detailsA} >LOOKING FOR</a></div>
             <div className={style.button}>
-                <Button dark icon={certify} fun={goToResume} >RESUME</Button>
+                <Button dark icon={certify} >
+                    <a href="https://docs.google.com/document/d/1vDmBzllZk_qyTCaQRO6dqiTH_IRL1Ifh6R_0kng0elI/edit?usp=sharing" style={{textDecoration: "none", color: "white"}}>
+                    RESUME
+                    </a>
+                </Button>
             </div>
         </div>
     )

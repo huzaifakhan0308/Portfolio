@@ -1,20 +1,16 @@
-import React ,{useState , useEffect, useRef} from 'react'
+import React ,{useState, useRef} from 'react'
 import emailjs from "@emailjs/browser";
-import Head from "next/head";
 import style from '../styles/pageCss/page.module.css'
 import styleHome from '../styles/Home.module.css'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
-import Menu from './menu'
 import Button from '../elements/button'
 import { useInView } from "framer-motion"
 
 function Contact() {
   const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
-  const [website, setWebsite] = useState("");
   const [message, setMessage] = useState("");
   const [button , setButton ] = useState("HIRE ME")
   const contact = useRef(null)
@@ -52,10 +48,8 @@ function Contact() {
       );
 
     setName("");
-    setSubject("");
     setEmail("");
     setCountry("");
-    setWebsite("");
     setMessage("");
   }
 
@@ -86,7 +80,7 @@ function Contact() {
               </div>
               <div className={style.input}>
                 <a className={style.name}>Message</a>
-                <input required value={message} onChange={(e)=>{setMessage(e.target.value)}} className={style.area} type="text" />
+                <textarea required value={message} onChange={(e)=>{setMessage(e.target.value)}} className={style.area} type="text" />
               </div>
               <button id="submit" type="submit" className={style.button} ></button>
               <label htmlFor="submit">
@@ -113,7 +107,7 @@ function Contact() {
                 <input placeholder='Country' required value={country} onChange={(e)=>{setCountry(e.target.value)}} type="text" />
               </div>
               <div className={style.input}>
-                <input placeholder='Message' required value={message} onChange={(e)=>{setMessage(e.target.value)}} className={style.area} type="text" />
+                <textarea placeholder='Message' required value={message} onChange={(e)=>{setMessage(e.target.value)}} className={style.area} type="text" />
               </div>
               <button id="submit2" type="submit" className={style.button} ></button>
               <label htmlFor="submit2">

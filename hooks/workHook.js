@@ -1,6 +1,6 @@
 import bookease from "../public/bookease.png"
-import recipes from "../public/recipes.jpg"
-import editor from "../public/editor.jpg"
+import blogWebsite from "../public/Blogwebsite.png"
+import weatherapp from "../public/weatherapp.png"
 
 export const workHook = () =>{
     const work = [
@@ -11,16 +11,16 @@ export const workHook = () =>{
             image: bookease
         },
         {
-            heading:"SPOONACULAR",
-            link:"/recipes",
-            details:"A Website with a lot of different recipies. You can search for your favorite dishes.",
-            image: recipes
+            heading:"BLOGS",
+            link:"https://blogs-vn9i.onrender.com/",
+            details:"Discover a captivating blog website made with React, Redux, and Firebase. Enjoy a curated collection of informative blogs, with a user-friendly interface. Experience seamless browsing and easy access, all controlled by a single user.",
+            image: blogWebsite
         },
         {
-            heading:"PHOTO EDITOR",
-            link:"/editor",
-            details:"An Editor Web App. You can use it to edit your image on the go and download it after you are done",
-            image: editor
+            heading:"WEATHER APP",
+            link:"https://weather-8zxb.onrender.com/",
+            details:"Experience WeatherApp, a cutting-edge weather app powered by React and Redux. Stay informed with real-time weather updates and a user-friendly interface. Plan your day confidently with WeatherApp intuitive design and reliable weather data.",
+            image: weatherapp
         }
     ]
 

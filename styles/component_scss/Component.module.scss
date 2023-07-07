@@ -420,6 +420,34 @@
         transform: rotateZ(0deg);
         opacity: 1;
     }
+    .buttonSecondary4{
+        right: 5%;
+        top: 12%;
+        transform: rotateZ(-20deg);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .buttonSecondary4Mob{
+        right: 5%;
+        top: 10%;
+        transform: rotateZ(-20deg);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .checkBox:checked ~ .buttonSecondary4{
+        pointer-events: all;
+        right: calc(10% - 17px);
+        top: 190px;
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
+    .checkBox:checked ~ .buttonSecondary4Mob{
+        pointer-events: all;
+        right: calc(25% - 16px);
+        top: 120px;
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
     .checkBox{
         display: none;
     }
@@ -442,7 +470,7 @@
     }
     .slides{
         scroll-behavior: smooth;
-        width: 70%;
+        width: 80%;
         aspect-ratio: 2/2;
         overflow: auto;
         overflow-x: hidden;
@@ -513,7 +541,7 @@
     }
     .slidesOverlay{
         pointer-events: none;
-        width: 70%;
+        width: 80%;
         height: 70%;
         display: flex;
         align-items: center;
@@ -523,7 +551,7 @@
             pointer-events: all;
             box-shadow: var(--boxShadow);
             cursor: pointer;
-            z-index: 4;
+            z-index: 0;
             position: absolute;
             width: 4%;
             height: 30%;
@@ -888,6 +916,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 3vh;
     p{
         margin: 40px 0;
         font-size: var(--fontSizeLargeMob);
