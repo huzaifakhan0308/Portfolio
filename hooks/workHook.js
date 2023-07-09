@@ -6,7 +6,7 @@ export const workHook = () =>{
     const work = [
         {
             heading:"BOOKEASE",
-            link:"/",
+            link:"https://book-ease.onrender.com/",
             details:"Streamline hotel reservations with our React-based front-end and Ruby on Rails-powered backend, delivering a seamless booking experience.",
             image: bookease
         },
