@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>Profile</title>
+          <title>Huzaifa Khan</title>
       </Head>
       <div className={styles.menuLayout} >
         <Menu top={top} projects={projects} aboutMe={aboutMe} expertise={expertise} contact={contact}/>

@@ -454,279 +454,130 @@
 }
 
 .secondSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: var(--colorDark2);
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     .header{
         font-size: var(--fontSizeLarge);
-        margin: 40px 0;
+        margin: 20px 0;
         letter-spacing: 3px;
     }
-    .slides{
-        scroll-behavior: smooth;
-        width: 80%;
-        aspect-ratio: 2/2;
-        overflow: auto;
-        overflow-x: hidden;
+    .ProjectsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .cards{
+        width: 45%;
+        min-height: 38vh;
+        margin: 10px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .backImage{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        position: absolute;
+    }
+    .workDetails {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.54);
+        transition: transform 0.6s;
+        transform: translateX(100%);
+        .heading{
+            font-size: x-large;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        .buttons{
+            display: flex;
+        }
+    }
+    .icon {
         display: flex;
         align-items: center;
-        border-radius: var(--borderRadius);
-        position: relative;
-        .work{
-            height: 100%;
-            min-width: 100%;
-            position: relative;
+        flex-direction: column;
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 2px;
+        .iconsDiv {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            .backImage{
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                filter: brightness(1);
-                transition: 0.3s ease-in-out;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .cards {
+            min-height: auto;
+            aspect-ratio: 2/1.1;
+            font-size: 12px;
+        }
+        .workDetails {
+            .heading {
+                font-size: 18px;
             }
-            .workDetails{
-                pointer-events: all;
-                position: absolute;
-                font-size: var(--fontSizeLarge);
-                display: flex;
+        }
+        @media screen and (max-width: 800px) {
+            .ProjectsContainer{
                 flex-direction: column;
                 align-items: center;
-                row-gap: 20px;
-                .heading{
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.3s ease-in-out;
+                flex-wrap: none;
+            }
+            .cards {
+                font-size: 14px;
+                width: 90%;
+            }
+            @media screen and (max-width: 500px){
+                .cards {
+                    font-size: 11px;
                 }
-                .details{
-                    width: 50%;
-                    text-align: center;
-                    font-size: var(--fontSizeSmall);
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.4s ease-in-out;
-                }
-                .detailsButton{
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.5s ease-in-out;
+                @media screen and (max-width: 400px) {
+                    .icon{
+                        display: none;
+                    }
+                    @media screen and (max-width: 340px) {
+                        .cards {
+                            min-height: auto;
+                            aspect-ratio: 2/1.1;
+                            font-size: 10px;
+                        }
+                    }
                 }
             }
         }
+    }
 
-        .work:hover .backImage{
-            filter: brightness(0.6) blur(10px);
-        }
-        .work:hover .heading{
-            transform: translateY(0px);
-            opacity: 1;
-        }
-        .work:hover .details{
-            transform: translateY(0px);
-            opacity: 1;
-        }
-        .work:hover .detailsButton{
-            transform: translateY(0px);
-            opacity: 1;
-        }
+    .cards:hover .workDetails {
+        transform: translateX(-100%);
     }
-    .slidesOverlay{
-        pointer-events: none;
-        width: 80%;
-        height: 70%;
+    .buttonsContainer{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        .slideButton{
-            pointer-events: all;
-            box-shadow: var(--boxShadow);
-            cursor: pointer;
-            z-index: 0;
-            position: absolute;
-            width: 4%;
-            height: 30%;
-            background-color: var(--colorDark2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            transition: 0.3s;
-            .arrow{
-                width: 1.5vh;
-                height: 1.5vh;
-                border-top: 2px solid var(--colorLight);
-                border-left: 2px solid var(--colorLight);
-                transform: rotateZ(-45deg);
-            }
-        }
-        .slideButton:hover{
-            background-color: var(--colorDark);
-        }
-        .slideButtonLeft{
-            border-radius: 0px 40px 40px 0px;
-            left: -4px;
-        }
-        .slideButtonRight{
-            border-radius: 40px 0px 0px 40px;
-            right: -4px;
-            .arrow{
-                transform: rotateZ(135deg);
-            }
-        }
-
-    }
-    .buttons{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        display: flex;
-        margin-left: 50%;
-        column-gap: 20px;
-    }
-}
-.secondSlideMob{
-    width: 100%;
-    background-color: var(--colorDark2);
-    box-shadow: var(--boxShadow);
-    border-radius: var(--borderRadius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    .header{
-        font-size: var(--fontSizeLargeMob);
-        margin: 40px 0;
-    }
-    .slides{
-        scroll-behavior: smooth;
-        width: 70%;
-        aspect-ratio: 2/2;
-        overflow: auto;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        display: flex;
-        align-items: center;
-        border-radius: var(--borderRadius);
-        position: relative;
-        .work{
-            height: 100%;
-            min-width: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .backImage{
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                filter: blur(0px);
-                transition: 0.3s ease-in-out;
-            }
-            .workDetails{
-                pointer-events: all;
-                position: absolute;
-                font-size: var(--fontSizeLargeMob);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                row-gap: 10px;
-                .heading{
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.3s ease-in-out;
-                }
-                .details{
-                    width: 50%;
-                    text-align: center;
-                    font-size: 2.5vw;
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.4s ease-in-out;
-                }
-                .detailsButton{
-                    transform: translateY(20px);
-                    opacity: 0;
-                    transition: 0.5s ease-in-out;
-                }
-            }
-        }
-
-        .work:hover .backImage{
-            filter: blur(10px);
-        }
-        .work:hover .heading{
-            transform: translateY(0px);
-            opacity: 1;
-        }
-        .work:hover .details{
-            transform: translateY(0px);
-            opacity: 1;
-        }
-        .work:hover .detailsButton{
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-    .slidesOverlay{
-        pointer-events: none;
-        width: 70%;
-        aspect-ratio: 2/2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        .slideButton{
-            pointer-events: all;
-            box-shadow: var(--boxShadow);
-            cursor: pointer;
-            position: absolute;
-            width: 6%;
-            height: 30%;
-            background-color: var(--colorDark2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            transition: 0.3s;
-            .arrow{
-                width: 40%;
-                aspect-ratio: 1/1;
-                border-top: 2px solid var(--colorLight);
-                border-left: 2px solid var(--colorLight);
-                transform: rotateZ(-45deg);
-            }
-        }
-        .slideButton:hover{
-            background-color: var(--colorDark);
-        }
-        .slideButtonLeft{
-            border-radius: 0px 40px 40px 0px;
-            left: -4px;
-        }
-        .slideButtonRight{
-            border-radius: 40px 0px 0px 40px;
-            right: -4px;
-            .arrow{
-                transform: rotateZ(135deg);
-            }
-        }
-
-    }
-    .buttons{
-        margin: 40px 0;
-        display: flex;
-        column-gap: 20px;
+        width: 100%;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 10px;
     }
 }
 
@@ -793,7 +644,7 @@
         left: -32%;
     }
     .plant{
-        z-index: 2;
+        z-index: 0;
         width: 10vh;
         position: absolute;
         margin-top: 30vh;

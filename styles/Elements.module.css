@@ -24,6 +24,7 @@
     border: 0.2vh solid var(--colorMain) ;
     transition: 0.3s ease-in-out;
     transform: rotateX(0deg) translateY(0px) ;
+    margin: 5px;
 }
 
 @media only screen and (max-width: 400px) {
