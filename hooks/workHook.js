@@ -1,4 +1,4 @@
-import bookease from "../public/Bookease.png"
+import bookease from "../public/bookease1.png"
 import blogWebsite from "../public/Blogwebsite.png"
 import weatherapp from "../public/weatherapp.png"
 import cricketacademy from "../public/cricketacademy.png"
