@@ -18,7 +18,8 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>Huzaifa Khan</title>
+        <title>Huzaifa Khan</title>
+        <meta name="google-site-verification" content="PJui8YEHIeyQH6-S3DWTReD59xb7TvlhzvKvr0xYoQk" />
       </Head>
       <div className={styles.menuLayout} >
         <Menu top={top} projects={projects} aboutMe={aboutMe} expertise={expertise} contact={contact}/>
