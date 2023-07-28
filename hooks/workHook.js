@@ -40,7 +40,7 @@ export const workHook = () =>{
         },
         {
             heading:"CRICKET ACADEMY",
-            liveView:"https://weather-8zxb.onrender.com/",
+            liveView:"https://huzaifakhan0308.github.io/capston-project/",
             sourceCode: "https://github.com/huzaifakhan0308/capston-project",
             details:"Welcome to our Cricket Academy website! Stay updated on the upcoming World Cup, match schedules, and team details. While JavaScript usage is minimal, our platform provides a comprehensive experience built primarily with HTML and CSS.",
             image: cricketacademy,
