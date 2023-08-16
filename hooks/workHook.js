@@ -1,16 +1,16 @@
 import bookease from "../public/bookease1.png"
 import blogWebsite from "../public/Blogwebsite.png"
 import weatherapp from "../public/weatherapp.png"
-import cricketacademy from "../public/cricketacademy.png"
-import html from '../public/icons/css.svg'
-import css from '../public/icons/html.svg'
-import js from '../public/icons/js.svg'
+import yourchoiceimg from "../public/yourchoiceimg.png"
 import jest from '../public/icons/jest.svg'
 import react from '../public/icons/react.svg'
 import redux from '../public/icons/redux.png'
 import rails from '../public/icons/rails.svg'
 import rspec from '../public/icons/Rspec.png'
 import swagger from '../public/icons/swagger.png'
+import node from '../public/icons/nodejs.svg'
+import next from '../public/icons/next.svg'
+import context from '../public/icons/context.svg'
 
 export const workHook = () =>{
     const work = [
@@ -39,12 +39,12 @@ export const workHook = () =>{
             techStack: [react, redux, jest]
         },
         {
-            heading:"CRICKET ACADEMY",
-            liveView:"https://weather-8zxb.onrender.com/",
-            sourceCode: "https://github.com/huzaifakhan0308/capston-project",
-            details:"Welcome to our Cricket Academy website! Stay updated on the upcoming World Cup, match schedules, and team details. While JavaScript usage is minimal, our platform provides a comprehensive experience built primarily with HTML and CSS.",
-            image: cricketacademy,
-            techStack: [html, css, js]
+            heading:"Your Choice Shop",
+            liveView:"https://your-choice-leather-collection.onrender.com/",
+            sourceCode: "https://github.com/huzaifakhan0308/your-choice-frontend",
+            details:"Crafted a sleek e-commerce platform using Node.js and Next.js, showcasing a stylish collection of shoes, jackets, and handbags. Seamlessly integrated Cloudinary and Context API for top-notch user experience.",
+            image: yourchoiceimg,
+            techStack: [next, context, node]
         }
     ]
 
