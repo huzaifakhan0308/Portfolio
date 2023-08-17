@@ -27,7 +27,7 @@
 
 # 📖 [ Portfolio ] <a name="about-project"></a>
 
-> This website is a Portfolio website of a person named Shayan
+> This website is a Portfolio website of a person named Huzaifa
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> shayanpk.ml
+> huzaifa-portfolio.onrender.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +86,7 @@ to clone this project
 
 Clone this repository to your desired folder:
 
-git clone [https://github.com/shayan1234554321/Portfolio_.git](https://github.com/shayan1234554321/portfolio)
+git clone [https://github.com/huzaifakhan0308/Portfolio.git](https://github.com/huzaifakhan0308/Portfolio.git)
 
 ### Install
 
@@ -116,11 +116,11 @@ Get a hosting website and give all of the github files
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Shayan
+👤 **Huzaifa khan**
 
-- GitHub: [@githubhandle](https://github.com/shayan1234554321)
-- Twitter: [@twitterhandle](https://twitter.com/shayan123455432)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shayan-khan20/)
+- GitHub: [@huzaifakhan0308](https://github.com/huzaifakhan0308)
+- Twitter: [@huzaifakhan0308](https://twitter.com/home?lang=en)
+- LinkedIn: [huzaifa khan](https://www.linkedin.com/in/huzaifa-khan-938140256/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ Get a hosting website and give all of the github files
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Not features in near future
+> Not features in the near future
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +136,7 @@ Get a hosting website and give all of the github files
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-As its my personal portfolio , no contributions are rquired
+As it's my personal portfolio, no contributions are required
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
