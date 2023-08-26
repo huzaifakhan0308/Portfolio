@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> huzaifa-portfolio.onrender.com
+> [live link](https://huzaifa-portfolio.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
