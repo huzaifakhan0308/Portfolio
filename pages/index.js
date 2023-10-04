@@ -19,6 +19,7 @@ export default function Home() {
     <>
       <Head>
         <title>Huzaifa Khan</title>
+        <link rel="icon" href="/icons/favicon.png" />
         <meta name="google-site-verification" content="PJui8YEHIeyQH6-S3DWTReD59xb7TvlhzvKvr0xYoQk" />
       </Head>
       <div className={styles.menuLayout} >
