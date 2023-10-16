@@ -26,7 +26,7 @@ const DetailsContainer = () =>{
             <div className={style.details} ><p className={style.detailsP} >I am looking for remote work and would love to put my efforts in contributing in a company. I am comfortable in working in almost all work schedules .</p><a className={style.detailsA} >LOOKING FOR</a></div>
             <div className={style.button}>
                 <Button dark icon={certify} >
-                    <a href="https://drive.google.com/file/d/17DzJ8ZU02DW8H0e-TLhySp8kRPc2WpCc/view?usp=sharing" style={{textDecoration: "none", color: "white"}}>
+                    <a href="https://drive.google.com/file/d/1MB113dXK2uMagZSAL8rNq3xVu-GMyG_2/view?usp=sharing" style={{textDecoration: "none", color: "white"}}>
                     RESUME
                     </a>
                 </Button>
