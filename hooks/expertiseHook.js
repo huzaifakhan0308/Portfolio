@@ -19,6 +19,7 @@ import sass from '../public/icons/sass.svg'
 import webpack from '../public/icons/webpack.svg'
 import rails from '../public/icons/rails.svg'
 import postman from '../public/icons/postman.svg'
+import context from '../public/icons/context.svg'
 import postgresql from '../public/icons/postgresql.png'
 import rspec from '../public/icons/Rspec.png'
 import jest from '../public/icons/jest.svg'
@@ -44,20 +45,16 @@ const frontEndExpertise = [
                 name: "SASS",
             },
             {
-                icon: js,
-                name: "JAVASCRIPT",
-            },
-            {
                 icon: webpack,
                 name: "WEBPACK",
             },
             {
-                icon: react,
-                name: "REACT.js",
-            },
-            {
                 icon: redux,
                 name: "REDUX",
+            },
+            {
+                icon: context,
+                name: "CONTEXT",
             },
             {
                 icon: jest,
@@ -78,18 +75,6 @@ const frontEndExpertise = [
     ]
 
 const backEndExpertise = [
-            {
-                icon: ruby,
-                name: "RUBY"
-            },
-            {
-                icon: rails,
-                name: "ROR"
-            },
-            {
-                icon: rspec,
-                name: "Rspec"
-            },
             {
                 icon: nodejs,
                 name: "NODE.JS"

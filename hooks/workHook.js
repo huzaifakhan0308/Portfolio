@@ -1,6 +1,6 @@
 import bookease from "../public/Bookease.png"
 import blogWebsite from "../public/Blogwebsite.png"
-import weatherapp from "../public/weatherapp.png"
+import robodialog from "../public/robodialog.png"
 import yourchoiceimg from "../public/yourchoiceimg.png"
 import jest from '../public/icons/jest.svg'
 import react from '../public/icons/react.svg'
@@ -10,10 +10,20 @@ import rspec from '../public/icons/Rspec.png'
 import swagger from '../public/icons/swagger.png'
 import node from '../public/icons/nodejs.svg'
 import next from '../public/icons/next.svg'
+import mongo from '../public/icons/mongo.svg'
+import express from '../public/icons/express.svg'
 import context from '../public/icons/context.svg'
 
 export const workHook = () =>{
     const work = [
+        {
+            heading:"ROBODIALOG",
+            liveView:"https://robodialog.com/",
+            sourceCode: "https://github.com/huzaifakhan0308",
+            details:"roboDialog is an advanced AI-powered chatbot designed to enhance customer interactions on websites. It combines powerful AI technology with human oversight, offering customizable chat flows, seamless API integration.",
+            image: robodialog,
+            techStack: [next, context, node, express, mongo]
+        },
         {
             heading:"BOOKEASE",
             liveView:"https://book-ease.onrender.com/",
@@ -23,6 +33,14 @@ export const workHook = () =>{
             techStack: [react, redux, rails, rspec, swagger]
         },
         {
+            heading:"Your Choice Shop",
+            liveView:"https://your-choice-leather-collection.onrender.com/",
+            sourceCode: "https://github.com/huzaifakhan0308/your-choice-frontend",
+            details:"Crafted a sleek e-commerce platform using Node.js and Next.js, showcasing a stylish collection of shoes, jackets, and handbags. Seamlessly integrated Cloudinary and Context API for top-notch user experience.",
+            image: yourchoiceimg,
+            techStack: [next, context, node]
+        },
+        {
             heading:"BLOGS",
             liveView:"https://blogs-vn9i.onrender.com/",
             sourceCode: "https://github.com/huzaifakhan0308/blog-website",
@@ -30,22 +48,6 @@ export const workHook = () =>{
             image: blogWebsite,
             techStack: [react, redux]
         },
-        {
-            heading:"WEATHER APP",
-            liveView:"https://weather-8zxb.onrender.com/",
-            sourceCode: "https://github.com/huzaifakhan0308/react-capston",
-            details:"Experience WeatherApp, powered by React and Redux. Stay informed with real-time weather updates and a user-friendly interface. Plan your day confidently with WeatherApp intuitive design and reliable weather data.",
-            image: weatherapp,
-            techStack: [react, redux, jest]
-        },
-        {
-            heading:"Your Choice Shop",
-            liveView:"https://your-choice-leather-collection.onrender.com/",
-            sourceCode: "https://github.com/huzaifakhan0308/your-choice-frontend",
-            details:"Crafted a sleek e-commerce platform using Node.js and Next.js, showcasing a stylish collection of shoes, jackets, and handbags. Seamlessly integrated Cloudinary and Context API for top-notch user experience.",
-            image: yourchoiceimg,
-            techStack: [next, context, node]
-        }
     ]
 
     return ({work})
